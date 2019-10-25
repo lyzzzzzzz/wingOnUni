@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "My Passport",
+  "usingComponents": {
+    "tki-qrcode": "/components/tki-qrcode/tki-qrcode"
+  }
+}

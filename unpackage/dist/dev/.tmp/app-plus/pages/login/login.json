@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "WingOn Reward",
+  "usingComponents": {
+    "uni-segmented-control": "/components/uni-segmented-control/uni-segmented-control"
+  }
+}

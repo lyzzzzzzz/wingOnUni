@@ -1,0 +1,109 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {}
+		},
+		{
+			"path": "pages/index/root",
+			"style": {}
+		},
+		{
+			"path": "pages/register/wingOn",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "WingOn Reward"
+			}
+		},
+		{
+			"path": "pages/home/myPassport",
+			"style": {
+				"navigationBarTitleText": "My Passport"
+			}
+		},
+		{
+			"path": "pages/home/myEpoint",
+			"style": {
+				"navigationBarTitleText": "My epoint"
+			}
+		},
+		{
+			"path": "pages/home/eCoupon",
+			"style": {
+				"navigationBarTitleText": "e-Coupon"
+			}
+		},
+		{
+			"path": "pages/home/message",
+			"style": {
+				"navigationBarTitleText": "Message"
+			}
+		},
+		{
+			"path": "pages/home/promotion",
+			"style": {
+				"navigationBarTitleText": "Promotion"
+			}
+		},
+		{
+			"path": "pages/home/index"
+		}
+	],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#E41F30",
+		"borderStyle": "light",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/home/myEpoint",
+				"iconPath": "static/tabIcon/myEpoint.png",
+				"selectedIconPath": "static/tabIcon/epoint_select.png",
+				"text": "My epoint"
+			}, {
+				"pagePath": "pages/home/eCoupon",
+				"iconPath": "static/tabIcon/coupon.png",
+				"selectedIconPath": "static/tabIcon/coupon_select.png",
+				"text": "e-Coupon"
+			},
+			{
+				"pagePath": "pages/home/myPassport",
+				"iconPath": "static/tabIcon/passport.png",
+				"selectedIconPath": "static/tabIcon/passport_select.png",
+				"text": "My Passport"
+			},
+			{
+				"pagePath": "pages/home/message",
+				"iconPath": "static/tabIcon/message.png",
+				"selectedIconPath": "static/tabIcon/message_select.png",
+				"text": "Message"
+			},
+			{
+				"pagePath": "pages/home/promotion",
+				"iconPath": "static/tabIcon/promotion.png",
+				"selectedIconPath": "static/tabIcon/promotion_select.png",
+				"text": "Promotion"
+			}
+		]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式（list 的索引项）
+		"list": [{
+			"name": "test", //模式名称
+			"path": "pages/home/myPassport" //启动页面，必选
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#E41F30",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "default",
+		"navigationBarShadow": {
+			"colorType": "grey"
+		}
+	}
+}

@@ -1,0 +1,70 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/root",
+    "pages/register/wingOn",
+    "pages/login/login",
+    "pages/home/myPassport",
+    "pages/home/myEpoint",
+    "pages/home/eCoupon",
+    "pages/home/message",
+    "pages/home/promotion",
+    "pages/home/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#E41F30",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "default",
+    "navigationBarShadow": {
+      "colorType": "grey"
+    }
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#E41F30",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/myEpoint",
+        "iconPath": "static/tabIcon/myEpoint.png",
+        "selectedIconPath": "static/tabIcon/epoint_select.png",
+        "text": "My epoint"
+      },
+      {
+        "pagePath": "pages/home/eCoupon",
+        "iconPath": "static/tabIcon/coupon.png",
+        "selectedIconPath": "static/tabIcon/coupon_select.png",
+        "text": "e-Coupon"
+      },
+      {
+        "pagePath": "pages/home/myPassport",
+        "iconPath": "static/tabIcon/passport.png",
+        "selectedIconPath": "static/tabIcon/passport_select.png",
+        "text": "My Passport"
+      },
+      {
+        "pagePath": "pages/home/message",
+        "iconPath": "static/tabIcon/message.png",
+        "selectedIconPath": "static/tabIcon/message_select.png",
+        "text": "Message"
+      },
+      {
+        "pagePath": "pages/home/promotion",
+        "iconPath": "static/tabIcon/promotion.png",
+        "selectedIconPath": "static/tabIcon/promotion_select.png",
+        "text": "Promotion"
+      }
+    ]
+  },
+  "nvueCompiler": "uni-app",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "wingOnUni",
+  "compilerVersion": "2.3.6",
+  "usingComponents": {}
+}

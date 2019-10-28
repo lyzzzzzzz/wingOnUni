@@ -734,7 +734,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -7087,7 +7087,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -7108,14 +7108,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -7191,7 +7191,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -7612,9 +7612,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 43:
-/*!****************************************************!*\
-  !*** D:/workspace/wingOnUni/static/environment.js ***!
-  \****************************************************/
+/*!*******************************************************!*\
+  !*** D:/workspace/wingOnUni/common/js/environment.js ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8514,7 +8514,7 @@ main();
 
 /***/ 52:
 /*!****************************************************!*\
-  !*** D:/workspace/wingOnUni/static/js/wxqrcode.js ***!
+  !*** D:/workspace/wingOnUni/common/js/wxqrcode.js ***!
   \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -10156,31 +10156,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.
 
 /***/ }),
 
-/***/ 7:
-/*!**********************************************************!*\
-  !*** D:/workspace/wingOnUni/pages.json?{"type":"style"} ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "usingComponents": {} }, "pages/index/root": { "usingComponents": {} }, "pages/register/wingOn": { "navigationStyle": "custom", "usingComponents": {} }, "pages/login/login": { "navigationBarTitleText": "WingOn Reward", "usingComponents": { "uni-segmented-control": "/components/uni-segmented-control/uni-segmented-control" } }, "pages/home/myPassport": { "navigationBarTitleText": "My Passport", "usingComponents": {} }, "pages/home/myEpoint": { "navigationBarTitleText": "My epoint", "usingComponents": { "uni-list": "/components/uni-list/uni-list", "uni-list-item": "/components/uni-list-item/uni-list-item" } }, "pages/home/eCoupon": { "navigationBarTitleText": "e-Coupon", "usingComponents": {} }, "pages/home/message": { "navigationBarTitleText": "Message", "usingComponents": {} }, "pages/home/promotion": { "navigationBarTitleText": "Promotion", "usingComponents": {} }, "pages/home/index": { "usingComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "white", "navigationBarBackgroundColor": "#E41F30", "backgroundColor": "#F8F8F8", "navigationStyle": "default", "navigationBarShadow": { "colorType": "grey" } } };exports.default = _default;
-
-/***/ }),
-
-/***/ 8:
-/*!*********************************************************!*\
-  !*** D:/workspace/wingOnUni/pages.json?{"type":"stat"} ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "appid": "__UNI__E70F55B" };exports.default = _default;
-
-/***/ }),
-
-/***/ 98:
+/***/ 61:
 /*!**************************************************************!*\
   !*** D:/workspace/wingOnUni/components/u-charts/u-charts.js ***!
   \**************************************************************/
@@ -15235,6 +15211,30 @@ if ( true && typeof module.exports === "object") {
   //export default Charts;//建议使用nodejs的module导出方式，如报错请使用export方式导出
 }
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
+/***/ 7:
+/*!**********************************************************!*\
+  !*** D:/workspace/wingOnUni/pages.json?{"type":"style"} ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "usingComponents": {} }, "pages/index/root": { "usingComponents": {} }, "pages/register/wingOn": { "navigationStyle": "custom", "usingComponents": {} }, "pages/login/login": { "navigationBarTitleText": "WingOn Reward", "usingComponents": { "uni-segmented-control": "/components/uni-segmented-control/uni-segmented-control" } }, "pages/home/myPassport": { "navigationBarTitleText": "My Passport", "usingComponents": {} }, "pages/home/myEpoint": { "navigationBarTitleText": "My epoint", "usingComponents": { "uni-list": "/components/uni-list/uni-list", "uni-list-item": "/components/uni-list-item/uni-list-item" } }, "pages/home/eCoupon": { "navigationBarTitleText": "e-Coupon", "usingComponents": { "uni-segmented-control": "/components/uni-segmented-control/uni-segmented-control" } }, "pages/home/message": { "navigationBarTitleText": "Message", "usingComponents": {} }, "pages/home/promotion": { "navigationBarTitleText": "Promotion", "usingComponents": {} }, "pages/home/index": { "usingComponents": {} }, "pages/home/epoint/records": { "navigationBarTitleText": "My ePoint and Transaction Records", "usingComponents": {} }, "pages/home/epoint/redeemRewards": { "navigationBarTitleText": "Redeem My Rewards", "usingComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "white", "navigationBarBackgroundColor": "#E41F30", "backgroundColor": "#F8F8F8", "navigationStyle": "default", "navigationBarShadow": { "colorType": "grey" } } };exports.default = _default;
+
+/***/ }),
+
+/***/ 8:
+/*!*********************************************************!*\
+  !*** D:/workspace/wingOnUni/pages.json?{"type":"stat"} ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "appid": "__UNI__E70F55B" };exports.default = _default;
 
 /***/ })
 

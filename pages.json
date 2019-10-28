@@ -52,12 +52,24 @@
 		},
 		{
 			"path": "pages/home/index"
+		},
+		{
+			"path": "pages/home/epoint/records",
+			"style": {
+				"navigationBarTitleText": "My ePoint and Transaction Records"
+			}
+		},
+		{
+			"path": "pages/home/epoint/redeemRewards",
+			"style": {
+				"navigationBarTitleText": "Redeem My Rewards"
+			}
 		}
 	],
 	"tabBar": {
 		"color": "#7A7E83",
 		"selectedColor": "#E41F30",
-		"borderStyle": "light",
+		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
 		"list": [{
 				"pagePath": "pages/home/myEpoint",
@@ -94,7 +106,7 @@
 		"current": 0, //当前激活的模式（list 的索引项）
 		"list": [{
 			"name": "test", //模式名称
-			"path": "pages/home/myPassport" //启动页面，必选
+			"path": "pages/home/eCoupon" //启动页面，必选
 		}]
 	},
 	"globalStyle": {

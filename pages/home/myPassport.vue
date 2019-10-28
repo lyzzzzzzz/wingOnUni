@@ -10,7 +10,7 @@
 </template>
 
 <script>
-	import QR from "../../static/js/wxqrcode.js"
+	import QR from "../../common/js/wxqrcode.js"
 	export default {
 		data() {
 			return {

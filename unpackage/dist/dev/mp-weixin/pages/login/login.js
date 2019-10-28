@@ -196,7 +196,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _environment = _interopRequireDefault(__webpack_require__(/*! ../../static/environment.js */ 43));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var uniSegmentedControl = function uniSegmentedControl() {return __webpack_require__.e(/*! import() | components/uni-segmented-control/uni-segmented-control */ "components/uni-segmented-control/uni-segmented-control").then(__webpack_require__.bind(null, /*! @/components/uni-segmented-control/uni-segmented-control.vue */ 85));};var _default =
+var _environment = _interopRequireDefault(__webpack_require__(/*! ../../common/js/environment.js */ 43));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var uniSegmentedControl = function uniSegmentedControl() {return __webpack_require__.e(/*! import() | components/uni-segmented-control/uni-segmented-control */ "components/uni-segmented-control/uni-segmented-control").then(__webpack_require__.bind(null, /*! @/components/uni-segmented-control/uni-segmented-control.vue */ 102));};var _default =
 {
   components: {
     uniSegmentedControl: uniSegmentedControl },

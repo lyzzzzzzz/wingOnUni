@@ -72,7 +72,7 @@
 
 <script>
 	import uniSegmentedControl from "@/components/uni-segmented-control/uni-segmented-control.vue"
-	import environment from '../../static/environment.js'
+	import environment from '../../common/js/environment.js'
 	export default {
 		components: {
 			uniSegmentedControl

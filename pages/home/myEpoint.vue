@@ -15,8 +15,8 @@
 		<view class="list">
 
 			<uni-list style="width: 100%;">
-				<uni-list-item title="标题文字"></uni-list-item>
-				<uni-list-item title="标题文字" class="item"></uni-list-item>
+				<uni-list-item title="My ePoint and Transaction Records" @click='toRecords'></uni-list-item>
+				<uni-list-item title="Redeem My Rewards" class="item" @click='toRedeem'></uni-list-item>
 			</uni-list>
 
 		</view>
@@ -117,6 +117,16 @@
 					dataLabel: true,
 				});
 			},
+			toRecords:function(){
+				uni.navigateTo({
+					url: './epoint/records',
+				});
+			},
+			toRedeem:function(){
+				uni.navigateTo({
+					url: './epoint/redeemRewards',
+				});
+			}
 		}
 	}
 </script>
@@ -152,8 +162,10 @@
 	.list {
 		width: 100%;
 		bottom: 0px;
-		/* position: absolute; */
+		position: absolute;
 	}
+
+
 
 	
 </style>

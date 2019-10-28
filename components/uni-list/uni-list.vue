@@ -31,6 +31,9 @@
 		transform: scaleY(.5);
 		background-color: #e5e5e5
 	}
+	
+	
+
 
 	.uni-list:before {
 		position: absolute;

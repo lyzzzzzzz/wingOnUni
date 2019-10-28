@@ -1,0 +1,10 @@
+
+page {
+	width: 100%;
+}
+.img {
+	background-image: url(../../static/img/inbox_banner.b156ebf8.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+

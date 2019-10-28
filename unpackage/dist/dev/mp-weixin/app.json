@@ -9,7 +9,9 @@
     "pages/home/eCoupon",
     "pages/home/message",
     "pages/home/promotion",
-    "pages/home/index"
+    "pages/home/index",
+    "pages/home/epoint/records",
+    "pages/home/epoint/redeemRewards"
   ],
   "subPackages": [],
   "window": {
@@ -24,7 +26,7 @@
   "tabBar": {
     "color": "#7A7E83",
     "selectedColor": "#E41F30",
-    "borderStyle": "light",
+    "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [
       {

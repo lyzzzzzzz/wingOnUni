@@ -134,7 +134,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-var _wxqrcode = _interopRequireDefault(__webpack_require__(/*! ../../static/js/wxqrcode.js */ 52));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
+var _wxqrcode = _interopRequireDefault(__webpack_require__(/*! ../../common/js/wxqrcode.js */ 52));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
 //
 //
 //

@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "e-Coupon",
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-segmented-control": "/components/uni-segmented-control/uni-segmented-control"
+  }
 }

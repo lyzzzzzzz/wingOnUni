@@ -1,0 +1,12 @@
+
+page {
+	width: 100%;
+	background: #F6F6F6;
+	scrollIndicator: 'none';
+}
+::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	background-color: transparent;
+}
+

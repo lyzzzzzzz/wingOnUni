@@ -154,6 +154,10 @@
 		background-color: #e5e5e5
 	}
 
+	.uni-list .uni-list-item:last-child .uni-list-item__container::after {
+		height: 0px;
+	}
+
 	.uni-list-item__content {
 		flex: 1;
 		overflow: hidden;
